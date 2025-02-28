@@ -187,7 +187,7 @@ This repository contains a collection of essential VBA functions for working wit
 
 ### Examples of Usage
 
-####1. **Create an Excel File from a Range:**
+#### 1. **Create an Excel File from a Range:**
 
 ```vba
 Sub TestCreateExcelFileFromRange()
@@ -195,7 +195,7 @@ Sub TestCreateExcelFileFromRange()
 End Sub
 ```
 
-####2. **Create an Excel File from an Array:**
+#### 2. **Create an Excel File from an Array:**
 
 ```vba
 Sub TestCreateExcelFileFromArray()
@@ -210,7 +210,7 @@ Sub TestCreateExcelFileFromArray()
 End Sub
 ```
 
-####3. **Copy Files from One Directory to Another:**
+#### 3. **Copy Files from One Directory to Another:**
 
 ```vba
 Sub TestCopyFiles()
@@ -218,7 +218,7 @@ Sub TestCopyFiles()
 End Sub
 ```
 
-####4. **Create a Folder with Date Formats:**
+#### 4. **Create a Folder with Date Formats:**
 
 ```vba
 Sub TestCreateFolder()
@@ -226,7 +226,7 @@ Sub TestCreateFolder()
 End Sub
 ```
 
-####5. **Save a File with Date Formats:**
+#### 5. **Save a File with Date Formats:**
 
 ```vba
 Sub TestSaveFileWithDate()
