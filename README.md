@@ -176,9 +176,71 @@ This repository contains a collection of essential VBA functions for working wit
   ```
 
 
+## Functions for Working with Files and Folders
+
+1. **CreateExcelFileFromRange**: Creates a new Excel file from a range of cells.
+2. **CreateExcelFileFromArray**: Creates a new Excel file from an array.
+3. **CopyFiles**: Copies files from one directory to another.
+4. **CreateFolder**: Creates a folder with a name that includes specific date formats.
+5. **SaveFileWithDate**: Saves a file with a name that includes specific date formats.
 
 
-### How to implement Any of the .bas Files with the Macros 
+### Examples of Usage
+
+####1. **Create an Excel File from a Range:**
+
+```vba
+Sub TestCreateExcelFileFromRange()
+    CreateExcelFileFromRange ThisWorkbook.Sheets("Sheet1").Range("A1:B3"), "C:\Users\YourUsername\Documents\NewFile.xlsx"
+End Sub
+```
+
+####2. **Create an Excel File from an Array:**
+
+```vba
+Sub TestCreateExcelFileFromArray()
+    Dim myArray(1 To 3, 1 To 2) As Variant
+    myArray(1, 1) = "A1"
+    myArray(1, 2) = "B1"
+    myArray(2, 1) = "A2"
+    myArray(2, 2) = "B2"
+    myArray(3, 1) = "A3"
+    myArray(3, 2) = "B3"
+    CreateExcelFileFromArray myArray, "C:\Users\YourUsername\Documents\NewFileFromArray.xlsx"
+End Sub
+```
+
+####3. **Copy Files from One Directory to Another:**
+
+```vba
+Sub TestCopyFiles()
+    CopyFiles "C:\Users\YourUsername\Documents\Source", "C:\Users\YourUsername\Documents\Destination"
+End Sub
+```
+
+####4. **Create a Folder with Date Formats:**
+
+```vba
+Sub TestCreateFolder()
+    CreateFolder "C:\Users\YourUsername\Documents", "MyFolder", "2025", "01", "-"
+End Sub
+```
+
+####5. **Save a File with Date Formats:**
+
+```vba
+Sub TestSaveFileWithDate()
+    SaveFileWithDate "C:\Users\YourUsername\Documents", "MyFile", "yyyy-mm-dd"
+End Sub
+```
+
+
+
+
+
+
+
+## How to implement Any of the .bas Files with the Macros 
 
 Here are the two basic options for implementing any of the `.bas` files in this REPO... maybe you already know but.. lets review anyways:
 
